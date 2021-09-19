@@ -3,7 +3,6 @@
 
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
-        int i,j;
         int prevColor = image[sr][sc];
         if(prevColor != newColor)
             color(image, sr, sc, newColor, prevColor);
