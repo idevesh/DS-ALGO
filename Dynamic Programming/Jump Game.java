@@ -5,7 +5,7 @@ class Solution {
     public boolean canJump(int[] nums) {
         int target = nums.length-1;
         if(target == 0) return true;
-        
+        if(target == 1 && nums[0] != 0) return true;
         int i,reachable = 0;
         Boolean flag = false;
         for(i = 0; i <= reachable; i++){
@@ -16,6 +16,7 @@ class Solution {
             }
             if(reachable >= target){
                 flag = true;
+                break;
             }
         }
         return flag;
