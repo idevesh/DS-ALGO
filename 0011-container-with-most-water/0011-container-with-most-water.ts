@@ -1,7 +1,7 @@
 function maxArea(height: number[]): number {
     if (height.length === 0) return 0;
     else if (height.length === 1) return 0;
-    else if (height.length === 2) return Math.min(height[0], height[1]);
+    // else if (height.length === 2) return Math.min(height[0], height[1]);
     else {
         let maxArea = 0;
         // Bruteforce
